@@ -1,9 +1,9 @@
 const item=(id,name,icon,level,max,parent,effect,description)=>({id,name,icon,level,max,parent,effect,description});
 const groups={blacksmith:[{title:'General upgrades',icon:'⚒',description:'Strengthen the foundations of your army.',rows:2,nodes:[
-item('tools','Ironworking','elixir',3,3,null,'+15% equipment strength','Better tools make better weapons. Equip your smiths with the knowledge to work stronger, more reliable iron.'),
+item('tools','Ironworking','elixir',3,3,null,'+5% offensive power per level for barrack and stable units','Improve the weapons of your barrack and stable units, increasing their offensive power by 5% per research level.'),
 item('forge','Advanced Forging','barracks',2,5,'tools','+5% attack per level','Master the heat of the forge. Refined techniques give every weapon a keener edge, strengthening all units.'),
 item('steel','Tempered Steel','gems',0,5,'forge','+8% attack per level','Fold and temper the finest steel to create weapons worthy of your kingdom’s greatest warriors.'),
-item('armor','Reinforced Armor','fountain',3,3,null,'+15% unit defense','Reinforce every shield and breastplate with sturdy iron fittings, helping your army hold the line.'),
+item('armor','Reinforced Armor','fountain',3,3,null,'+5% defensive power per level for barrack and stable units','Reinforce the armor of your barrack and stable units, increasing their defensive power by 5% per research level.'),
 item('shields','Shieldcraft','legend',0,4,'armor','+6% defense per level','Balance strength with mobility. Expertly crafted shields protect your soldiers without slowing their advance.'),
 item('plate','Masterwork Plating','army',0,5,'shields','+8% defense per level','Outfit your army with carefully fitted plates, forged to withstand even the fiercest enemy assault.')
 ]},{title:'Unit upgrades',icon:'⚔',description:'Give each troop the tools to turn the tide of battle.',rows:3,nodes:[
