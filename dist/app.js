@@ -1,31 +1,31 @@
 const item=(id,name,icon,level,max,parent,effect,description)=>({id,name,icon,level,max,parent,effect,description});
 const groups={blacksmith:[{title:'General upgrades',icon:'⚒',description:'Strengthen the foundations of your army.',rows:2,nodes:[
-item('tools','Ironworking','elixir',3,3,null,'+5% offensive power per level for barrack and stable units','Improve the weapons of your barrack and stable units, increasing their offensive power by 5% per research level.'),
-item('forge','Heavy Rangers','crossbow',2,3,'tools','+5% offensive and defensive power per level for all ranged infantry','Strengthen every ranged infantry unit, increasing both offensive and defensive power by 5% per research level.'),
-item('steel','Conscript Rangers','crossbow',0,3,'forge','+2.5% travel speed per level for rangers','Train your rangers to cover ground more efficiently, increasing their travel speed by 2.5% per research level.'),
-item('armor','Reinforced Armor','fountain',3,3,null,'+5% defensive power per level for barrack and stable units','Reinforce the armor of your barrack and stable units, increasing their defensive power by 5% per research level.'),
-item('shields','Heavy Infantry','army',0,3,'armor','+5% offensive and defensive power per level for all melee infantry','Strengthen every melee infantry unit, increasing both offensive and defensive power by 5% per research level.'),
-item('plate','Conscript Infantry','army',0,3,'shields','+2.5% travel speed per level for melee infantry','Train your melee infantry to cover ground more efficiently, increasing their travel speed by 2.5% per research level.')
+item('tools','Ironworking','elixir',1,1,null,'+5% offensive power per level for barrack and stable units','Improve the weapons of your barrack and stable units, increasing their offensive power by 5% per research level.'),
+item('forge','Heavy Rangers','crossbow',0,1,'tools','+5% offensive and defensive power per level for all ranged infantry','Strengthen every ranged infantry unit, increasing both offensive and defensive power by 5% per research level.'),
+item('steel','Conscript Rangers','crossbow',0,1,'forge','+2.5% travel speed per level for rangers','Train your rangers to cover ground more efficiently, increasing their travel speed by 2.5% per research level.'),
+item('armor','Reinforced Armor','fountain',1,1,null,'+5% defensive power per level for barrack and stable units','Reinforce the armor of your barrack and stable units, increasing their defensive power by 5% per research level.'),
+item('shields','Heavy Infantry','army',0,1,'armor','+5% offensive and defensive power per level for all melee infantry','Strengthen every melee infantry unit, increasing both offensive and defensive power by 5% per research level.'),
+item('plate','Conscript Infantry','army',0,1,'shields','+2.5% travel speed per level for melee infantry','Train your melee infantry to cover ground more efficiently, increasing their travel speed by 2.5% per research level.')
 ]},{title:'Unit upgrades',icon:'⚔',description:'Give each troop the tools to turn the tide of battle.',rows:3,nodes:[
-item('swords','Hardened Blades','army',3,3,null,'+15% infantry attack','Hardened iron blades give your front line the strength to break through enemy ranks.'),
-item('infantry','Veteran Infantry','barracks',1,3,'swords','+6% infantry health per level','Train experienced soldiers and equip them with superior gear to form the backbone of your army.'),
-item('guard','Royal Guard','legend',0,3,'infantry','+10% infantry defense per level','Raise an elite guard, armored in the kingdom’s finest steel and sworn to defend its people.'),
-item('bows','Balanced Bows','crossbow',2,3,null,'+5% ranged attack per level','Carefully balanced bows let your archers strike with greater force and consistency.'),
-item('crossbows','Crossbow Promotion','crossbow',0,3,'bows','+8% ranged attack per level','Introduce powerful crossbows to your ranged ranks, capable of piercing reinforced armor.'),
-item('marksmen','Master Marksmen','dust',0,3,'crossbows','+10% ranged accuracy per level','Supply precision weapons to your most skilled marksmen and make every shot count.'),
-item('saddles','Reinforced Saddles','city',0,3,null,'+5% cavalry health per level','Strong saddles and improved tack keep your riders secure through even the most demanding charge.'),
-item('cavalry','Heavy Cavalry','army',0,3,'saddles','+8% cavalry attack per level','Arm your mounted troops with heavy lances and protective barding to deliver a devastating charge.'),
-item('knights','Kingdom Knights','legend',0,3,'cavalry','+10% cavalry defense per level','Elevate your finest riders to knighthood, equipped with exceptional armor and a proud kingdom banner.')
+item('swords','Hardened Blades','army',1,1,null,'+15% infantry attack','Hardened iron blades give your front line the strength to break through enemy ranks.'),
+item('infantry','Veteran Infantry','barracks',0,1,'swords','+6% infantry health per level','Train experienced soldiers and equip them with superior gear to form the backbone of your army.'),
+item('guard','Royal Guard','legend',0,1,'infantry','+10% infantry defense per level','Raise an elite guard, armored in the kingdom’s finest steel and sworn to defend its people.'),
+item('bows','Balanced Bows','crossbow',0,1,null,'+5% ranged attack per level','Carefully balanced bows let your archers strike with greater force and consistency.'),
+item('crossbows','Crossbow Promotion','crossbow',0,1,'bows','+8% ranged attack per level','Introduce powerful crossbows to your ranged ranks, capable of piercing reinforced armor.'),
+item('marksmen','Master Marksmen','dust',0,1,'crossbows','+10% ranged accuracy per level','Supply precision weapons to your most skilled marksmen and make every shot count.'),
+item('saddles','Reinforced Saddles','city',0,1,null,'+5% cavalry health per level','Strong saddles and improved tack keep your riders secure through even the most demanding charge.'),
+item('cavalry','Heavy Cavalry','army',0,1,'saddles','+8% cavalry attack per level','Arm your mounted troops with heavy lances and protective barding to deliver a devastating charge.'),
+item('knights','Kingdom Knights','legend',0,1,'cavalry','+10% cavalry defense per level','Elevate your finest riders to knighthood, equipped with exceptional armor and a proud kingdom banner.')
 ]}],library:[{title:'Kingdom knowledge',icon:'▤',description:'Unlock the discoveries that let your kingdom flourish.',rows:3,nodes:[
-item('writing','Written Records','magic',3,3,null,'+15% research efficiency','Preserve your kingdom’s knowledge in carefully kept records, giving every scholar a foundation to build upon.'),
-item('scholars','Scholars’ Academy','barracks',1,3,'writing','+5% knowledge per level','Gather curious minds in a dedicated academy, where new discoveries become the tools of tomorrow.'),
-item('wisdom','Age of Enlightenment','dust',0,3,'scholars','+10% research efficiency per level','Unite generations of scholarship in a new age of reason, invention, and shared knowledge.'),
-item('harvest','Improved Harvests','city',3,3,null,'+15% food production','Record the changing seasons and teach your farmers better methods for abundant, reliable harvests.'),
-item('trade','Merchant Charters','gems',0,3,'harvest','+6% trade income per level','Establish fair trading rules and open new opportunities for merchants throughout your kingdom.'),
-item('expansion','City Expansion','city',0,3,'trade','+8% population capacity per level','Apply advanced planning to expand your cities, creating room for more citizens, commerce, and craft.'),
-item('alchemy','Practical Alchemy','elixir',1,3,null,'+5% elixir production per level','Study the properties of rare ingredients and discover useful mixtures for your growing kingdom.'),
-item('enchant','Arcane Studies','magic',0,3,'alchemy','+6% magic dust per level','Decipher ancient texts and discover how to harness the subtle forces that flow through the world.'),
-item('crystals','Crystal Mastery','gems',0,3,'enchant','+10% gem production per level','Unlock the hidden potential of precious crystals through careful study and masterful refinement.')
+item('writing','Written Records','magic',1,1,null,'+15% research efficiency','Preserve your kingdom’s knowledge in carefully kept records, giving every scholar a foundation to build upon.'),
+item('scholars','Scholars’ Academy','barracks',0,1,'writing','+5% knowledge per level','Gather curious minds in a dedicated academy, where new discoveries become the tools of tomorrow.'),
+item('wisdom','Age of Enlightenment','dust',0,1,'scholars','+10% research efficiency per level','Unite generations of scholarship in a new age of reason, invention, and shared knowledge.'),
+item('harvest','Improved Harvests','city',1,1,null,'+15% food production','Record the changing seasons and teach your farmers better methods for abundant, reliable harvests.'),
+item('trade','Merchant Charters','gems',0,1,'harvest','+6% trade income per level','Establish fair trading rules and open new opportunities for merchants throughout your kingdom.'),
+item('expansion','City Expansion','city',0,1,'trade','+8% population capacity per level','Apply advanced planning to expand your cities, creating room for more citizens, commerce, and craft.'),
+item('alchemy','Practical Alchemy','elixir',0,1,null,'+5% elixir production per level','Study the properties of rare ingredients and discover useful mixtures for your growing kingdom.'),
+item('enchant','Arcane Studies','magic',0,1,'alchemy','+6% magic dust per level','Decipher ancient texts and discover how to harness the subtle forces that flow through the world.'),
+item('crystals','Crystal Mastery','gems',0,1,'enchant','+10% gem production per level','Unlock the hidden potential of precious crystals through careful study and masterful refinement.')
 ]}]};
 let currentTab='blacksmith',selected='forge';
 const all=Object.values(groups).flatMap(sections=>sections.flatMap(section=>section.nodes));
