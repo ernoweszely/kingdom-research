@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#25251e"><meta name="description" content="Explore your kingdom's Blacksmith and Library research trees.">
+<title>Kingdom · Research</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%232b2b22'/%3E%3Cpath d='M6 9h20l-4 7h-5v6h5v3H10v-3h4v-6H9z' fill='%23d5b16a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./" aria-label="Kingdom research home"><span class="brand-mark">♜</span><span>KINGDOM<span class="brand-caption">THE AGE OF DISCOVERY</span></span></a><div class="header-center"><span class="line"></span> RESEARCH & DEVELOPMENT <span class="line"></span></div><span class="chapter">CHAPTER IV <span>·</span> AGE OF IRON</span></header>
+<main class="shell">
+<div class="page-heading"><div><p class="eyebrow">BUILD A STRONGER KINGDOM</p><h1>Knowledge is power.</h1></div><div class="overall"><span class="crest">✧</span><div><strong id="total-complete">0</strong><span>advancements mastered</span></div></div></div>
+<div class="nav-row"><div class="tabs" role="tablist" aria-label="Research buildings"><button class="tab active" id="tab-blacksmith" role="tab" aria-selected="true" aria-controls="research-panel" tabindex="0" data-tab="blacksmith"><span aria-hidden="true">⚒</span> Blacksmith <span class="tab-count" id="count-blacksmith"></span></button><button class="tab" id="tab-library" role="tab" aria-selected="false" aria-controls="research-panel" tabindex="-1" data-tab="library"><span aria-hidden="true">▤</span> Library <span class="tab-count" id="count-library"></span></button></div><div class="legend"><span><i class="complete"></i>Mastered</span><span><i class="available"></i>Available</span><span><i class="locked"></i>Locked</span></div></div>
+<div class="workspace" id="research-panel" role="tabpanel" aria-labelledby="tab-blacksmith"><div class="trees" id="trees"></div><aside class="details" aria-label="Selected research"><div class="detail-top"><span class="eyebrow">UPGRADE DETAILS</span><span class="detail-number" id="detail-tier"></span></div><div class="detail-art"><span id="detail-icon" class="sprite"></span><span class="art-ring"></span></div><div class="detail-body"><span class="status-label" id="detail-state"></span><h2 id="detail-name"></h2><p class="description" id="detail-description"></p><div class="benefit"><span class="benefit-icon">✦</span><div><span>UPGRADE EFFECT</span><strong id="detail-effect"></strong></div></div><div class="level-row"><span>Research progress</span><strong id="detail-level"></strong></div><div class="detail-progress"><span id="detail-fill"></span></div><div id="prerequisites"></div><button class="research-button" id="research-button"></button><p class="detail-help" id="detail-help"></p></div><div class="detail-foot"><span>✧</span> Every advancement shapes your kingdom.</div></aside></div>
+<footer><span><span class="footer-diamond">◆</span> KINGDOM ARCHIVES</span><span>Illustrative research · Progress resets on reload</span><span>Follow the branches. Forge your future.</span></footer>
+</main><div class="sr-only" role="status" aria-live="polite" id="announcement"></div>
+</body></html>
