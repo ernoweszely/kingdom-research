@@ -1,0 +1,18 @@
+# Local dependencies and tools
+node_modules/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Local archives and logs
+*.zip
+*.tar.gz
+*.log
+# dist/ contains the source for this buildless site and MUST remain tracked.
